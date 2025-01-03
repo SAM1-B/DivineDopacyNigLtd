@@ -1,0 +1,436 @@
+/* FIRST NAVIGATION BAR */
+body{
+   overflow-x: hidden;
+}
+.nav1 .nav{
+   justify-content: right;
+   margin-right:100px;
+}
+
+
+
+.nav-large-display{
+    list-style: none;
+ }
+
+ .navHead  li a{
+    transition: 0.6s;
+ } 
+
+ /* NAVBAR LINES */
+ .nav-lines div{
+    width: 30px;
+    height: 2px;
+    border: none;
+    background-color: #fff;
+    display: block;
+    margin:7px;
+ }
+
+
+/*HERO SECTION  */
+.hero{
+height:100vh;
+background-image: url(img/pe2.jpg);
+background-size: cover;
+transition: 0.8s;
+background-position: bottom;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+.heroService{
+   height:50vh;
+   background-image: url(img/pe2.jpg);
+   background-size: cover;
+   transition: 0.8s;
+   background-position: bottom;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#header{
+   background-color:rgb(255, 255, 255);
+   z-index: 1000000;
+   position:fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   transition: 0.8s;
+
+
+}
+.headerAbout{
+      background-color:rgb(255, 255, 255);
+   z-index: 1000000;
+   position:fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   transition: 0.8s;
+}
+
+.sticky{
+   background-color:rgb(183, 239, 183);
+   position: fixed;
+   top: 0;
+   transition: 0.8s;
+}
+
+.aboutHero{
+   padding-top: 130px;
+}
+.misionSec{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+/* ANIMATION ON SCROLL */
+/* .rollshapes{
+   z-index: 1000px;
+} */
+@keyframes appear{
+   from{
+       transform:translateX(-1000px)
+   } to{
+       transform:translateX(0px)
+   }
+}
+
+@keyframes appear2{
+   from{
+       transform:translateX(-1000px)
+   } to{
+       transform:translateX(0px)
+   }
+}
+
+@keyframes appear3{
+   from{
+       transform:translateX(-1000px)
+   } to{
+       transform:translateX(0px)
+   }
+}
+
+#block1{
+   animation: 3s appear linear;
+   animation-timeline: view();
+   animation-range:entry 0% cover 40%;
+   
+}
+#block2{
+   animation: 2s appear2 linear;
+   animation-timeline: view();
+   animation-range:entry 0% cover 40%;
+   
+}
+#block3{
+   animation: appear2 linear;
+   animation-timeline: view();
+   animation-range:entry 0% cover 40%;
+   animation-delay:4s;
+   
+}
+
+
+/*WHATSAPP  */
+.whatsappWrap{
+   position: fixed;
+   right: 30px;
+   bottom:30px;
+   background:rgba(248, 255, 227, 0.523);
+   border-radius:50%;
+   padding:8px;
+   /* box-shadow: rgba(214, 214, 214, 0.322) 5px 5px 10px 5px; */
+}
+
+.whatsappWrap:hover{
+   background:rgba(29, 128, 12, 0.99);
+}
+
+
+
+.mobile-view {
+   z-index: 200000;
+   
+}
+
+/* SECOND NAVIGATION */
+
+.use li a{
+   color: green;
+}
+
+
+/* SERVICES PAGE */
+
+.hero2{
+   background-image: url(img/cahsew1.jpg);
+   background-size: cover;
+   height: 80vh;
+   background-position-y: -200px;
+}
+
+
+.ceoServices{
+   background-color: #012e1130;
+}
+
+
+
+.firstRow{
+   animation-name:firstRow;
+   transition: 30s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+   animation-timing-function: ease-in;
+   animation-play-state: running;
+   animation-duration: 17s;
+}
+.secondRow{
+   animation-name:secondRow;
+   transition: 20s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: normal;
+   animation-play-state: running;
+   animation-timing-function: ease-in;
+   animation-duration: 30s;
+  }
+.secondRow img{
+   width: 20%;
+}
+.firstRow img{
+   width: 20%;
+}
+
+@keyframes firstRow {
+   from{
+      transform: translateX(0px);
+   }
+   to{
+      transform: translateX(-1300px);
+   }
+}
+
+@keyframes secondRow {
+   from{
+      transform: translateX(-1300px);
+   }
+   to{
+      transform: translateX(0px);
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media(min-width:700px){
+    main .harmburger{
+        display: none;
+    }
+ }
+
+
+ @media(max-width:680px){
+   
+  .navHead{
+    justify-content:right;
+    align-items:center;
+  }
+  .use{
+    display: none;
+  }
+  .mobile-view{
+   
+    height:100vh;
+    background-size: cover;
+    background-blend-mode:multiply;
+    background-repeat: no-repeat;
+    background: rgb(26, 128, 0);
+    transition: 0.6s;
+    border: none;
+    z-index: 5000000;
+    transition: 0.6s;
+    
+  }
+  .mobile-view2{
+    /* background-image: url(img/pe1.jpg); */
+    height: 100vh;
+    background-size: cover;
+  }
+  .potraitNav li{
+   margin-bottom: 20px;
+  }
+  #header{
+   background-color:rgb(8, 112, 4);
+   transition: 0.8s;
+}
+.harmburger{
+   background:none;
+}
+.nav1{
+   display: none;
+}
+.mobile-txtview{
+   text-align: center;
+   padding-top: 100px;
+}
+
+.hero{
+    background-image: url(img/pe1.png);
+    background-color: rgb(2, 79, 40);
+    height: inherit;
+  
+   }
+   .homeHero{
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+   }
+   .ceo{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+   }
+   .ceo img{
+      width: 80%;
+   }
+   .heroService{
+      height:30vh;
+     
+   }
+   .firstRow{
+      animation-name:firstRow;
+      transition: 30s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-timing-function: ease-in;
+      animation-play-state: running;
+      animation-duration: 50s;
+   }
+   .secondRow{
+      animation-name:secondRow;
+      transition: 20s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-play-state: running;
+      animation-timing-function: ease-in;
+      animation-duration: 50s;
+     }
+   .secondRow img{
+      width: 30%;
+   }
+   .firstRow img{
+      width: 30%;
+   }
+   @keyframes firstRow {
+      from{
+         transform: translateX(0px);
+      }
+      to{
+         transform: translateX(-400px);
+      }
+   }
+   
+   @keyframes secondRow {
+      from{
+         transform: translateX(-400px);
+      }
+      to{
+         transform: translateX(0px);
+      }
+   }
+   .overview{
+      text-align: center;
+   }
+ 
+ }
+ 
